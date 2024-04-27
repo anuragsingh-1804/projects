@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guess the Word</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="heading">
+    <h1>WORD HUNT</h1>
+    <h3>Beat the buzzer-guess the word before your chances vanish!</h3>
+  </div>
+
+  <div class="game">
+    <div id="hint-display"></div><br>
+    <div id="word-display"></div>
+    <div id="guesses-left">Guesses left: <span id="guesses">6</span></div>
+    <div class="result"></div>
+  </div>
+
+  <div id="letters-container"></div>
+  <button id="reset-button">Reset</button>
+
+  <div class="rules">
+    <h4><u>How to Play</u></h4>
+    <div class="allRules">
+
+      <div class="left">
+        <ul><b>Start of Game</b></ul>
+          <li>The game displays a word as blanks (e.g., _ _ _ _ _ for a five-letter word).</li>
+        <ul><b>Outcome</b></ul>
+          <li>Winning: Fill in all blanks correctly before chances run out to win.</li>
+          <li>Losing: Failing to guess the word within six incorrect attempts results in a loss; the correct word is then
+            revealed.</li>
+      </div>
+
+      <div class="right">
+        <ul><b>Guessing Letters</b></ul>
+          <li>Players choose one letter at a time to check its presence in the word.</li>
+          <li>Correct guesses reveal all occurrences of the letter (e.g., if "apple" is the word and "p" is guessed, it
+            appears as _ pp_ _).</li>
+          <li>Incorrect guesses count against the player, reducing their remaining chances.</li>
+          <li>Players have six chances to guess incorrectly.</li>
+      </div>
+
+    </div>
+  </div>
+  <script src="words.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
