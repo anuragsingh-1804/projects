@@ -1,0 +1,116 @@
+body{
+  font-family: Arial, sans-serif;
+  text-align: center;
+  place-items: center;
+  background-color: #AEDDE5;
+  color: white;
+  height: 100%;
+  width: 100%;
+} 
+
+*{
+  margin: 0px; 
+  padding: 0px;
+}
+
+.heading{
+  /* color:#034951; */
+  color: white;
+  font-family:Roboto;
+  margin-top: 0px;
+  margin-bottom: 35px;
+  padding-bottom: 10px;
+  background-color: #022327;
+}
+
+h1{
+  font-size: 40px;
+}
+
+#word-display {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+#hint-display{
+  padding-top: 15px;
+}
+
+#guesses-left, .result{
+  color: darkred;
+  font-weight: bold;
+}
+
+.game{
+  align-items: center;
+  background-color: #034951;
+  border-radius: 8px;
+  height: 180px;
+  width: 620px;
+  margin: 0 auto;
+  font-size: 20px;
+}
+
+#letters-container {
+  margin-top: 20px;
+}
+
+.letter {
+  display: inline-block;
+  font-size: 20px;
+  margin: 5px;
+  cursor: pointer;
+  border: 2px solid black;
+  border-radius: 5px;
+  height: 35px;
+  width: 35px;
+  background-color: #034951;
+  color: white;
+}
+
+#reset-button {
+  margin-top: 25px;
+  margin-bottom: 40px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #79210b;
+  color: white  ;
+  border-radius: 5px;
+}
+
+.letter:hover, #reset-button:hover{
+  color: black;
+  box-shadow: 0px 0px 8px 5px darkgray;
+}
+
+.rules{
+  background-color: #022327;
+  position: fixed;
+  height: 150px;
+  width: 100%;
+  margin-bottom: 0px;
+  z-index: 1000;
+  padding: 15px;
+}
+
+h4{
+  font-weight:1000;
+  margin-bottom: 10px;
+}
+
+.allRules{
+  text-align: left;
+  font-size: 15px;
+  margin: 10px;
+}
+
+.left{
+  float: left;
+  width: 50%;
+}
+
+.right{
+  float: right;
+  width: 50%;
+}
